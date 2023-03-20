@@ -6,5 +6,8 @@ content: [
   theme: {
     extend: {},
   },
+  fontFamily: {
+      plex: ["IBM Plex Sans"],
+    },
   plugins: [],
 }
