@@ -17,11 +17,17 @@ content: [
       "3xl": "1700px",
     },
 
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('/src/assets/images/hero-pattern.svg')",
+        'havatar': "url('/src/assets/images/avatar.svg')",
+      }
+    },
     colors: {
       text_one: "#101828",
       paragraph_color:"#475467",
       text_two: "#344054",
+      shadow: "rgba(16, 24, 40, 0.1)"
     },
     fontFamily: {
       plex: ["IBM Plex Sans"],
