@@ -1,7 +1,5 @@
 import * as React from "react";
-export const Notification = (
-  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
-) => (
+export const Notification = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
   <svg
     width={20}
     height={22}

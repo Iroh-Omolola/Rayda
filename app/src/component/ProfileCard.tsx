@@ -1,5 +1,5 @@
 import React from "react";
-import { Like,  } from "../assets/svgs";
+import { Like } from "../assets/svgs";
 import ProfilePicture from "../assets/images/avatar.svg";
 
 export const ProfileCard = () => {
@@ -7,7 +7,7 @@ export const ProfileCard = () => {
     <div className="pt-5 mt-12 flex items-center  border pb-5 h-auto sm:h-80 rounded-[12px] shadow-sm shadow-shadow bg-[white] border-[#EAECF0]">
       <div className="relative w-full h-auto">
         <div className="sm:px-8 px-3">
-          <div className="max-w-full bg-cover sm:mt-20 h-44 rounded-lg bg-hero-pattern no-repeat"></div>
+          <div className="max-w-full bg-cover sm:mt-20 h-44 rounded-lg bg-hero no-repeat"></div>
         </div>
         <div className="w-full relative">
           <div className="relative w-full h-auto  -top-14 justify-center items-center sm:left-16 ">

@@ -1,7 +1,5 @@
 import * as React from "react";
-export const Like = (
-  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
-) => (
+export const Like = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
   <svg
     width={19}
     height={20}
