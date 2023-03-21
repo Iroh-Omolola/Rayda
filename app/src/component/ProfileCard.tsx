@@ -1,6 +1,6 @@
 import React from "react";
-import { Like } from "../assets/svgs";
 import ProfilePicture from "../assets/images/avatar.svg";
+import LikeIcon from "../assets/images/like.svg";
 
 export const ProfileCard = () => {
   return (
@@ -51,7 +51,7 @@ export const ProfileCard = () => {
                 </div>
               </div>
               <div className="cursor-pointer flex py-2 mr-32 h-10 px-3 space-x-2 border border-[#D0D5DD] rounded-[8px] -mt-24">
-                <Like />
+                <img src={LikeIcon} alt="like-icon" />
                 <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
                   Accept Invite
                 </p>
@@ -77,7 +77,7 @@ export const ProfileCard = () => {
             </div>
           </div>
           <div className="flex py-2 mr-5 sm:mr-12 h-10 px-3 space-x-2 border border-[#D0D5DD] rounded-[8px] ">
-            <Like />
+            <img src={LikeIcon} alt="like-icon" />
             <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
               Accept Invite
             </p>
