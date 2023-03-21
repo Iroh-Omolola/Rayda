@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonUnstyled from "@mui/base/ButtonUnstyled";
 import ProfilePicture from "../assets/images/avatar.svg";
 import LikeIcon from "../assets/images/like.svg";
 
@@ -10,7 +11,7 @@ export const ProfileCard = () => {
           <div className="max-w-full bg-cover sm:mt-20 h-44 rounded-lg bg-hero no-repeat"></div>
         </div>
         <div className="w-full relative">
-          <div className="relative w-full h-auto  -top-14 justify-center items-center sm:left-16 ">
+          <div className="relative w-full h-auto  -top-14 justify-center items-center sm:left-14 ">
             <div className="flex">
               <div className="w-full sm:flex hidden  sm:justify-start">
                 <div className="border-[white] sm:w-[166px] sm:h-[166px] border-0 rounded-full">
@@ -33,8 +34,8 @@ export const ProfileCard = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden sm:flex w-full  justify-between">
-              <div className="flex-col w-auto  ml-44 lg:ml-48 -mt-24 space-y-1">
+            <div className="hidden sm:flex w-full   justify-between">
+              <div className="flex-col w-auto   ml-44 -mt-24 space-y-1">
                 <h2 className="text-text_one text-[20px] lg:text-[24px] font-semibold">
                   Starts in: 3 days : 2 hours : 24 minutes{" "}
                 </h2>
@@ -50,11 +51,15 @@ export const ProfileCard = () => {
                   </p>
                 </div>
               </div>
-              <div className="cursor-pointer flex py-2 mr-32 h-10 px-3 space-x-2 border border-[#D0D5DD] rounded-[8px] -mt-24">
-                <img src={LikeIcon} alt="like-icon" />
-                <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
-                  Accept Invite
-                </p>
+
+              <div className="flex mr-32 h-9 -mt-24">
+                <ButtonUnstyled className="flex border-[0.2px] py-1 px-2 sm:py-2 space-x-3  h-9 sm:px-3 border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
+                  {" "}
+                  <img src={LikeIcon} className="" alt="like-icon" />
+                  <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
+                    Accept Invite
+                  </p>
+                </ButtonUnstyled>
               </div>
             </div>
           </div>
@@ -76,11 +81,14 @@ export const ProfileCard = () => {
               </p>
             </div>
           </div>
-          <div className="flex py-2 mr-5 sm:mr-12 h-10 px-3 space-x-2 border border-[#D0D5DD] rounded-[8px] ">
-            <img src={LikeIcon} alt="like-icon" />
-            <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
-              Accept Invite
-            </p>
+          <div className="flex mr-5 sm:mr-12 h-9">
+            <ButtonUnstyled className="flex border-[0.2px] py-2 space-x-2  h-9 px-3 border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
+              {" "}
+              <img src={LikeIcon} className="" alt="like-icon" />
+              <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
+                Accept Invite
+              </p>
+            </ButtonUnstyled>
           </div>
         </div>
       </div>
