@@ -1,7 +1,7 @@
 import React from 'react';
 import NotificationIcon from "../assets/images/notification.svg";
 
-export const  Header= () => {
+export const Header= () => {
   return (
     <div className="w-full">
       <div className="flex w-full mb-4">
