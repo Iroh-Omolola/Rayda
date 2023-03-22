@@ -53,10 +53,10 @@ export const ProfileCard = () => {
               </div>
 
               <div className="flex mr-32 h-9 -mt-24">
-                <ButtonUnstyled className="flex border-[0.2px] py-1 px-2 sm:py-2 space-x-3  h-9 sm:px-3 border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
+                <ButtonUnstyled className="flex border-[0.2px] py-1 px-3 lg:px-5 sm:py-2 space-x-0.5  lg:space-x-3 md:w-auto w-9 h-9 sm:px-3 border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
                   {" "}
                   <img src={LikeIcon} className="" alt="like-icon" />
-                  <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
+                  <p className="text-[14px] font-semibold text-[#344054] md:block hidden whitespace-nowrap">
                     Accept Invite
                   </p>
                 </ButtonUnstyled>
@@ -81,11 +81,11 @@ export const ProfileCard = () => {
               </p>
             </div>
           </div>
-          <div className="flex mr-5 sm:mr-12 h-9">
-            <ButtonUnstyled className="flex border-[0.2px] py-2 space-x-2  h-9 px-3 border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
+          <div className="flex mr-5 sm:mr-12">
+            <ButtonUnstyled className="flex w-9 border-[0.2px] shadow-sm shadow-shadow py-3 sm:py-2 space-x-2  h-9 px-3 border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
               {" "}
-              <img src={LikeIcon} className="" alt="like-icon" />
-              <p className="text-[14px] text-[#344054] md:block hidden whitespace-nowrap">
+              <img src={LikeIcon} alt="like-icon" />
+              <p className="text-[14px] font-semibold text-[#344054] md:block hidden whitespace-nowrap">
                 Accept Invite
               </p>
             </ButtonUnstyled>

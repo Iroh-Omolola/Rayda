@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
-/* @import "~tailwindcss/base"; */
+@import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
 
@@ -15,5 +15,5 @@ body{
   height: 100%;
 }
 .MuiButton-root{
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
 }

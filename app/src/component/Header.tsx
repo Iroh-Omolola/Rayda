@@ -19,11 +19,7 @@ export const Header= () => {
               <img src={NotificationIcon} alt="notification-icon" />
             </div>
             <div className="block sm:hidden">
-              <img
-                src={NotificationIcon}
-                alt="notification-icon"
-              />
-
+              <img src={NotificationIcon} alt="notification-icon" />
             </div>
           </div>
           <div className="absolute flex  left-5 sm:left-6  top-5 sm:top-6 w-4 h-4 sm:w-5 sm:h-5  bg-[#F04438] rounded-full">
@@ -33,7 +29,7 @@ export const Header= () => {
           </div>
         </div>
       </div>
-      <hr className="text-[#EAECF0]" />
+      <hr className="text-[#EAECF0] shadow-xs shadow-shadow" />
     </div>
   );  
 }

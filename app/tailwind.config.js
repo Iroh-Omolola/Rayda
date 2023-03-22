@@ -26,6 +26,8 @@ content: [
       text_one: "#101828",
       paragraph_color:"#475467",
       text_two: "#344054",
+      shadow:  "rgba(16, 24, 40, 0.1)",
+      shadow_btn : "rgba(16, 24, 40, 0.05)"
     },
     fontFamily: {
       plex: ["IBM Plex Sans"],
