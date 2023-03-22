@@ -35,7 +35,7 @@ export const Card = ({ myKey, image, bid, name, title }: ProductProps) => {
         <h3 className="text-text_one text-[14px] font-semibold">{title}</h3>
         <div className="flex space-x-0.5 text-text_two pb-3  text-[14px]">
           <h1 className="">Current Bid:</h1>{" "}
-          <span className="font-bold">{bid}</span>
+          <span className="font-bold">{bid.replace(/₦₦/g, "₦")}</span>
         </div>
       </div>
       <div className="flex">
