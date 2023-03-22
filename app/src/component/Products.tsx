@@ -13,7 +13,6 @@ export const Products  = () => {
    if (data == null) {
      console.log("data is null");
    } else {
-     // ✅ Works fine now (Use bracket notation)
      setProducts(data["data"]);
    }
  }, [data]);
