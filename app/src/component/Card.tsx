@@ -17,7 +17,10 @@ export const Card = ({ myKey, image, bid, name, title }: ProductProps) => {
         <div className="flex space-x-2">
           <div className="flex w-[28px] h-[28px] xl:w-[30px] xl:h-[30px] flex-nowrap  bg-[#F2F4F7] rounded-full">
             <span className="text-[10px]  xl:text-[13px] font-medium  text-center m-auto p-auto text-[#475467]">
-              KO
+              {name
+                .split(" ")
+                .map((n) => n[0])
+                .join("")}
             </span>
           </div>
           <div className="whitespace-nowrap my-auto flex space-x-0.5 text-[12px]">
