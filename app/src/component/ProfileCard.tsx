@@ -7,7 +7,7 @@ export const ProfileCard = () => {
   return (
     <div className="pt-5 mt-12 flex items-center  border pb-5 h-auto sm:h-80 rounded-[12px] shadow-sm shadow-shadow bg-[white] border-[#EAECF0]">
       <div className="relative w-full h-auto">
-        <div className="sm:px-8 px-3">
+        <div className="sm:px-5 px-3">
           <div className="max-w-full bg-cover sm:mt-20 h-44 rounded-lg bg-hero no-repeat"></div>
         </div>
         <div className="w-full relative">
