@@ -7,9 +7,15 @@ This project was bootstrapped with [Create React App]
 I used React, Typescript, TailwindCSS, Material UI and RTKQuery
 
 To run this app, follow these steps
-# cd app
 
-# npm install
+#clone the repository
+git clone https://github.com/Iroh-Omolola/Rayda.git
+
+# Enter the app folder
+cd app
+
+# Install the packages
+npm install
 
 # Create a .env file in the root folder and type this:
  REACT_APP_API_URL=https://run.mocky.io/
