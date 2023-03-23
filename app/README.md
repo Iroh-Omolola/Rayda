@@ -10,7 +10,8 @@ To run this app, follow these steps
 # npm install
 
 # npm start 
-![Alt text](../../../Desktop/Screenshot%202023-03-23%20at%2008.37.16.png)
+
 After these, run http://localhost:3000 on your browser
 
-![alt text](http://url/to/img.png)
+
+![Alt text](./src/assets/images/Screenshot%202023-03-23%20at%2008.37.16.png)
