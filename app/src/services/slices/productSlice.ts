@@ -8,5 +8,5 @@ export const productApi = createApi({
     }),
   }),
 })
-// Export hooks for usage in functional components
+
 export const { useGetProductsQuery } = productApi
