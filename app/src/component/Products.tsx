@@ -5,17 +5,17 @@ import { useGetProductsQuery } from "../services/slices/productSlice";
 import { Card } from "./Card";
 import { ProductProps } from "../type";
 
-export const Products  = () => {
- const { data, isLoading } = useGetProductsQuery();
- const [products, setProducts] = useState([]);
+export const Products = () => {
+  const { data, isLoading } = useGetProductsQuery();
+  const [products, setProducts] = useState([]);
 
- useEffect(() => {
-   if (data == null) {
-     console.log("data is null");
-   } else {
-     setProducts(data["data"]);
-   }
- }, [data]);
+  useEffect(() => {
+    if (data == null) {
+      console.log("data is null");
+    } else {
+      setProducts(data["data"]);
+    }
+  }, [data]);
 
   return (
     <>
@@ -52,15 +52,17 @@ export const Products  = () => {
             </div>
           </>
         )}
-        {data == null ? (
+        {data == null && (
           <div className="flex justify-center w-full py-5">
             <h1 className="text-center text-[14px] font-semibold text-text_one md:text-[20px]">
               No products !!!
             </h1>
           </div>
-        ) : (
-          products.map((product: ProductProps, index) => (
-            <div className="mt-5 grid gap-y-8 border gap-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        )}
+
+        <div className="mt-5 grid gap-y-8  gap-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {data !== null &&
+            products.map((product: ProductProps, index) => (
               <Card
                 key={index + 1}
                 myKey={index + 1}
@@ -69,9 +71,8 @@ export const Products  = () => {
                 name={product.name}
                 title={product.title}
               />
-            </div>
-          ))
-        )}
+            ))}
+        </div>
       </div>
     </>
   );
