@@ -1,7 +1,7 @@
 import { ButtonUnstyled } from "@mui/base";
 import { ProductProps } from "../type";
 
-export const Card = ({ myKey, image, bid, name, title }: ProductProps) => {
+export const Card = ({ image, bid, name, title }: ProductProps) => {
   return (
     <div className="border-[0.5px] border-[#D0D5DD] bg-[white] p-2.5 rounded-[12px]">
       <div className="flex justify-center py-auto bg-[#F2F4F7] rounded-[12px] max-w-[900px] h-[132px]">
