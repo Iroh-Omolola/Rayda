@@ -39,7 +39,7 @@ export const Card = ({ image, bid, name, title }: ProductProps) => {
         </div>
       </div>
       <div className="flex">
-        <ButtonUnstyled className="flex justify-center bg-[#004CCC] w-full border-[0.2px] py-1 sm:py-1.5 px-2 sm:px-3 shadow-xs shadow-shadow_btn  border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
+        <ButtonUnstyled className="flex justify-center bg-[#004CCC] w-full border-[0.2px] py-1.5 sm:py-2 px-2 sm:px-3 shadow-xs shadow-shadow_btn  border-[#D0D5DD] rounded-[8px] outline-none cursor-pointer">
           {" "}
           <p className="sm:text-[14px]  font-semibold text-[12px]  text-[white] whitespace-nowrap">
             Add to wishlist
