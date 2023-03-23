@@ -52,11 +52,15 @@ export const Products  = () => {
             </div>
           </>
         )}
-        <div className="mt-5 grid gap-y-8 gap-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {data == null ? (
-            <h1>No products !!!</h1>
-          ) : (
-            products.map((product: ProductProps, index) => (
+        {data == null ? (
+          <div className="flex justify-center w-full py-5">
+            <h1 className="text-center text-[14px] font-semibold text-text_one md:text-[20px]">
+              No products !!!
+            </h1>
+          </div>
+        ) : (
+          products.map((product: ProductProps, index) => (
+            <div className="mt-5 grid gap-y-8 border gap-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               <Card
                 key={index + 1}
                 myKey={index + 1}
@@ -65,9 +69,9 @@ export const Products  = () => {
                 name={product.name}
                 title={product.title}
               />
-            ))
-          )}
-        </div>
+            </div>
+          ))
+        )}
       </div>
     </>
   );
