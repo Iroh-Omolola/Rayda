@@ -11,7 +11,7 @@ export const Products = () => {
 
   useEffect(() => {
     if (data == null) {
-      console.log("data is null");
+      console.log();
     } else {
       setProducts(data["data"]);
     }
