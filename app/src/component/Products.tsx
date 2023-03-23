@@ -59,7 +59,6 @@ export const Products = () => {
             </h1>
           </div>
         )}
-
         <div className="mt-5 grid gap-y-8  gap-x-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {data !== null &&
             products.map((product: ProductProps, index) => (
